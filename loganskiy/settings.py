@@ -40,8 +40,16 @@ INSTALLED_APPS = [
     'django_summernote',
     'rest_framework',
     'rest_framework.authtoken',
-    'djoser'
+    'djoser',
+    'search',
+    'django_elasticsearch_dsl'
 ]
+
+ELASTICSEARCH_DSL = {
+    'default': {
+        'hosts': 'localhost:9200'
+    }
+}
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
