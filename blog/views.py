@@ -1,6 +1,7 @@
 from django.shortcuts import render, get_object_or_404
 from .forms import PostForm
 from .models import Post
+from search.documents import PostDocument
 
 # Create your views here.
 

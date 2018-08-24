@@ -1,4 +1,4 @@
-from django_elasticsearch_dsl import DocType, Index
+from django_elasticsearch_dsl import DocType, Index, fields
 from blog.models import Post
 
 posts = Index('posts')
